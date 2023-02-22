@@ -1,3 +1,39 @@
 body {
-  background: blanchedalmond;
+  background: grey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 10px;
+}
+
+.container div {
+  background-color: blue;
+  border: 5px solid red;
+  margin: 5px;
+}
+
+.a {
+  min-width: 95%;
+  min-height: 150px;
+}
+
+.b {
+  min-width: 80%;
+  min-height: 600px;
+}
+
+.c {
+  min-width: 10%;
+  min-height: 150px;
+}
+
+@media (min-width: 430px) {
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
 }
